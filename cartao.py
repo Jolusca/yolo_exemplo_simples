@@ -1,7 +1,10 @@
 import cv2
 import numpy as np
 
-cap = cv2.VideoCapture(0)
+
+#cap = cv2.VideoCapture(http://usuario:senha@http://192.168.18.192:8080/video:8080/video)
+#cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture("http://192.168.18.192:8080/video")
 
 # Limites da cor LARANJA no padrao HSV
 laranja_claro = np.array([5, 100, 100])
